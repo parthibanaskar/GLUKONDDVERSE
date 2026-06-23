@@ -143,7 +143,7 @@ export default function BandIntro() {
         <motion.img
           src="/images/band-intro.jpg"
           alt="band photo"
-          className="absolute inset-0 w-full h-full object-cover object-center filter brightness-[0.8] contrast-125"
+          className="absolute inset-0 w-full h-full object-cover object-[30%_center] filter brightness-[0.8] contrast-125"
           initial={{ scale: 1.1, opacity: 0 }}
           animate={bannerInView ? { scale: 1, opacity: 1 } : {}}
           transition={{ duration: 1.2, ease: 'easeOut' }}
