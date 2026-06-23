@@ -12,8 +12,6 @@ const nextConfig = {
     minimumCacheTTL: 60,
     qualities: [75, 85, 100],
   },
-  // Whitelists
-  allowedDevOrigins: ['192.168.31.91'],
 
   webpack(
     config,

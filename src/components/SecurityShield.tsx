@@ -3,11 +3,6 @@ import { useEffect } from 'react';
 
 export default function SecurityShield() {
   useEffect(() => {
-    const handleContextMenu = (e: MouseEvent) => {
-      e.preventDefault();
-    };
-
-    document.addEventListener('contextmenu', handleContextMenu);
 
     const handleDragStart = (e: DragEvent) => {
       if (e.target instanceof HTMLImageElement) {
@@ -36,7 +31,7 @@ export default function SecurityShield() {
     );
 
     return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
+
       document.removeEventListener('dragstart', handleDragStart);
     };
   }, []);
