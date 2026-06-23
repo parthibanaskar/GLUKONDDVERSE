@@ -89,7 +89,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3 group" aria-label="GlukonddVerse">
           <AppLogo size={36} className="transition-transform duration-300 group-hover:scale-110" />
           <span
-            className="font-mono text-sm font-bold tracking-[0.2em] uppercase hidden sm:block"
+            className="font-mono text-xs sm:text-sm font-bold tracking-[0.2em] uppercase block"
             style={{ color: fretConfig.accent }}
           >
             GLUKONDD<span style={{ color: textColor }}>VERSE</span>
