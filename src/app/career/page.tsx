@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 export default async function CareerPage() {
-  const supabase = createServerClient();
+  const supabase = await createServerClient();
 
   const [statsResponse, experienceResponse, projectsResponse] = await Promise.all([
     supabase.from('site_stats').select('*').single(),

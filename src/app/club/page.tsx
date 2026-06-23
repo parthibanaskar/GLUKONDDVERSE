@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default async function ClubPage() {
-  const supabase = createServerClient();
+  const supabase = await createServerClient();
 
   const { data } = await supabase
     .from('merch_items')

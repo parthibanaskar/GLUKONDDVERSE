@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 export default async function AboutPage() {
-  const supabase = createServerClient();
+  const supabase = await createServerClient();
 
   const [gitResponse, sideQuestsResponse] = await Promise.all([
     supabase.from('milestones').select('*').order('id', { ascending: false }),

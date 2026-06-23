@@ -17,7 +17,6 @@ export interface FretConfig {
   cursorType: 'crosshair' | 'knob' | 'focus-ring' | 'block';
   fontStyle: 'mono' | 'distressed' | 'serif' | 'brutalist';
   noiseOverlay: boolean;
-  cinematicBars: boolean;
   invertColors: boolean;
   description: string;
   capoBgContainer: string;
@@ -37,7 +36,6 @@ const FRET_CONFIGS: Record<FretNumber, FretConfig> = {
     cursorType: 'crosshair',
     fontStyle: 'mono',
     noiseOverlay: false,
-    cinematicBars: false,
     invertColors: false,
     description: 'FRET 0 TECH-BASE',
     capoBgContainer: 'rgba(20, 20, 20, 0.6)',
@@ -55,7 +53,6 @@ const FRET_CONFIGS: Record<FretNumber, FretConfig> = {
     cursorType: 'knob',
     fontStyle: 'distressed',
     noiseOverlay: true,
-    cinematicBars: false,
     invertColors: false,
     description: 'FRET 1 STUDIOVIBE',
     capoBgContainer: 'rgba(15, 12, 10, 0.7)',
@@ -73,7 +70,6 @@ const FRET_CONFIGS: Record<FretNumber, FretConfig> = {
     cursorType: 'focus-ring',
     fontStyle: 'serif',
     noiseOverlay: false,
-    cinematicBars: false,
     invertColors: false,
     description: 'FRET 2 MATRIX VIBE',
     capoBgContainer: 'rgba(6, 18, 9, 0.75)',
@@ -91,7 +87,6 @@ const FRET_CONFIGS: Record<FretNumber, FretConfig> = {
     cursorType: 'block',
     fontStyle: 'brutalist',
     noiseOverlay: false,
-    cinematicBars: false,
     invertColors: true,
     description: 'FRET 3 CLUB VIBE',
     capoBgContainer: 'rgba(0, 0, 0, 0.05)',
