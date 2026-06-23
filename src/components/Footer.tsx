@@ -58,14 +58,14 @@ export default function Footer() {
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-4">
         <div
-          className="font-mono text-[11px] tracking-[0.25em] uppercase flex flex-col items-center md:items-start gap-1"
+          className="font-mono text-[10px] md:text-[11px] tracking-[0.25em] uppercase flex flex-col items-center md:items-start gap-2 md:gap-1 text-center md:text-left"
           style={{ color: fg, opacity: 0.5 }}
         >
           <span>© {new Date().getFullYear()} GLUKONDDVERSE. ALL RIGHTS RESERVED.</span>
           <span> ENGINEERED BY PARTHIBA </span>
         </div>
         <motion.span
-          className="font-mono text-[11px] tracking-[0.15em] uppercase"
+          className="font-mono text-[10px] md:text-[11px] tracking-[0.15em] uppercase mt-2 md:mt-0"
           style={{ color: fretConfig.accent, opacity: 0.8 }}
           animate={{ opacity: [0.5, 1, 0.5] }}
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}

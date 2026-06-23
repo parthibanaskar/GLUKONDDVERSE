@@ -74,14 +74,12 @@ export default function Header() {
   return (
     <>
       <motion.header
-        className="fixed top-0 left-0 w-full flex items-center justify-between px-6 md:px-12 transition-all duration-300"
+        className="fixed top-0 left-0 w-full h-16 md:h-20 flex items-center justify-between px-6 md:px-12 transition-all duration-300"
         style={{
           zIndex: 9999,
           background: navBg,
           backdropFilter: 'blur(12px)',
           borderBottom: scrolled ? `1px solid ${borderColor}` : 'none',
-          height: '5rem',
-          paddingTop: '0px',
         }}
         initial={{ y: -80 }}
         animate={{ y: 0 }}
@@ -194,7 +192,7 @@ export default function Header() {
                 >
                   <Link
                     href={link.href}
-                    className="font-mono text-3xl font-bold tracking-widest uppercase"
+                    className="font-mono text-2xl sm:text-3xl font-bold tracking-widest uppercase"
                     style={{ color: fretConfig.accent }}
                     onClick={() => setMenuOpen(false)}
                   >

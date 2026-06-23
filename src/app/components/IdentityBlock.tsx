@@ -50,7 +50,7 @@ export default function IdentityBlock() {
   return (
     <section
       ref={blockRef}
-      className="relative px-6 md:px-12 lg:px-24 py-24"
+      className="relative px-6 md:px-12 lg:px-24 py-16 md:py-24"
       style={{ background: fretConfig.bg }}
     >
       <SectionLabel
@@ -175,7 +175,7 @@ function IdentityCard({
         {/*CTA*/}
         <Link href={identity.href} passHref legacyBehavior>
           <motion.a
-            className="font-mono text-[10px] font-bold tracking-[0.25em] uppercase px-4 py-2 border whitespace-nowrap self-center"
+            className="font-mono text-[10px] font-bold tracking-[0.25em] uppercase px-4 py-3 md:py-2 border whitespace-nowrap self-start md:self-center w-full md:w-auto text-center mt-4 md:mt-0"
             style={{
               borderColor: fretConfig.accent,
               color: hovered ? (activeFret === 3 ? '#ffffff' : '#000000') : fretConfig.accent,

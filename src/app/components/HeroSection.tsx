@@ -37,7 +37,7 @@ export default function HeroSection() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen pt-20 px-6 md:px-12 lg:px-24 flex flex-col justify-center overflow-hidden"
+      className="relative min-h-screen pt-24 md:pt-32 px-6 md:px-12 lg:px-24 flex flex-col justify-center overflow-hidden"
       style={{ background: fretConfig.bg }}
     >
       {activeFret === 0 && (
@@ -50,7 +50,7 @@ export default function HeroSection() {
         />
       )}
 
-      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[60fr_40fr] gap-12 lg:gap-8 items-center min-h-[calc(100vh-80px)]">
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[60fr_40fr] gap-12 lg:gap-8 items-center min-h-[calc(100vh-100px)]">
         <div className="flex flex-col justify-center py-12 lg:py-0">
           <SectionLabel
             label="MISSION BRIEF"
@@ -139,7 +139,7 @@ export default function HeroSection() {
           >
             <Link
               href="/career"
-              className="font-mono text-[11px] font-bold tracking-[0.25em] uppercase px-6 py-3 border transition-all"
+              className="font-mono text-[11px] font-bold tracking-[0.25em] uppercase px-6 py-4 sm:py-3 border transition-all w-full sm:w-auto text-center"
               style={{
                 background: fretConfig.accent,
                 color: activeFret === 3 ? '#ffffff' : '#000000',
@@ -150,7 +150,7 @@ export default function HeroSection() {
             </Link>
             <Link
               href="/about"
-              className="font-mono text-[11px] font-bold tracking-[0.25em] uppercase px-6 py-3 border transition-all"
+              className="font-mono text-[11px] font-bold tracking-[0.25em] uppercase px-6 py-4 sm:py-3 border transition-all w-full sm:w-auto text-center"
               style={{
                 background: 'transparent',
                 color: isBrute ? '#000000' : '#ffffff',
