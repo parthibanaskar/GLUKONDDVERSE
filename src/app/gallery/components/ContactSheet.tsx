@@ -24,7 +24,6 @@ function SprocketHoles({ side }: { side: 'left' | 'right' }) {
   );
 }
 
-
 function FilmStripCell({
   item,
   index,
@@ -56,7 +55,7 @@ function FilmStripCell({
         <SprocketHoles side="left" />
         <SprocketHoles side="right" />
         <div className="font-mono text-[8px] tracking-widest text-center py-1 text-white/25">
-          ◼ GLUKONDD'S LENS ◼
+          ◼ GLUKONDD&apos;S LENS ◼
         </div>
         <div className="relative aspect-square overflow-hidden">
           <Image
@@ -153,7 +152,11 @@ export default function ContactSheet() {
   };
 
   if (loading)
-    return <div className="text-white/20 p-24 text-center font-mono animate-pulse">LOADING ARCHIVE...</div>;
+    return (
+      <div className="text-white/20 p-24 text-center font-mono animate-pulse">
+        LOADING ARCHIVE...
+      </div>
+    );
 
   if (error)
     return (

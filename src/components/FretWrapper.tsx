@@ -81,7 +81,9 @@ export default function FretWrapper({ children }: { children: React.ReactNode })
         />
       )}
 
-      <div id="main-content" className="relative z-10 w-full">{children}</div>
+      <div id="main-content" className="relative z-10 w-full">
+        {children}
+      </div>
     </div>
   );
 }

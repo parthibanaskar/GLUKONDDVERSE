@@ -10,7 +10,7 @@ import type { GalleryFrequencyItem } from '@/types';
 
 export default function GallerySection() {
   const containerRef = useRef<HTMLDivElement>(null);
-  // -60px 
+  // -60px
   const galleryInView = useInView(containerRef, { once: true, margin: '-60px' });
 
   const [galleryItems, setGalleryItems] = useState<GalleryFrequencyItem[]>([]);
@@ -129,7 +129,13 @@ export default function GallerySection() {
                 }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={galleryInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: i * 0.1, type: 'spring', stiffness: 100, damping: 20, duration: 0.6 }}
+                transition={{
+                  delay: i * 0.1,
+                  type: 'spring',
+                  stiffness: 100,
+                  damping: 20,
+                  duration: 0.6,
+                }}
               >
                 {/*descriptor bar */}
                 <div className="flex items-center justify-between font-mono text-[9px] mb-3 opacity-60">

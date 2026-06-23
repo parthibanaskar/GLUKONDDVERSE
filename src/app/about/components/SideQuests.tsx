@@ -66,7 +66,7 @@ export default function SideQuests({ initialQuests }: { initialQuests: SideQuest
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            // 220/28 
+            // 220/28
             transition={{ type: 'spring', stiffness: 220, damping: 28 }}
           >
             <div className="divide-y" style={{ borderColor: `${fg}10` }}>

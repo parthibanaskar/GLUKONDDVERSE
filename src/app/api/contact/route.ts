@@ -19,7 +19,11 @@ export async function POST(request: Request) {
     }
 
     const sanitize = (s: string) =>
-      String(s).replace(/<[^>]*>?/gm, '').replace(/&[a-z]+;/gi, '').replace(/\0/g, '').trim();
+      String(s)
+        .replace(/<[^>]*>?/gm, '')
+        .replace(/&[a-z]+;/gi, '')
+        .replace(/\0/g, '')
+        .trim();
 
     const safeName = sanitize(name).substring(0, 100);
     const safeEmail = sanitize(email).substring(0, 100);

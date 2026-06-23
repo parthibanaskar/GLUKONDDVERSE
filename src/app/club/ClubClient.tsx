@@ -532,7 +532,7 @@ export default function ClubClient({ initialMerch }: { initialMerch: MerchItem[]
 
             <p className="font-mono text-sm opacity-60 max-w-lg">
               Heavyweight garments for those who have nothing left to prove. Wear the philosophy. Or
-              dont. We genuinely don't care.
+              dont. We genuinely don&apos;t care.
             </p>
           </motion.div>
 
@@ -580,7 +580,7 @@ export default function ClubClient({ initialMerch }: { initialMerch: MerchItem[]
               viewport={{ once: true }}
             >
               <p className="font-mono text-[10px] tracking-[0.4em] uppercase opacity-50 mb-4">
-                THAT'S IT. END OF COLLECTION.
+                THAT&apos;S IT. END OF COLLECTION.
               </p>
               <motion.button
                 disabled

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useRef } from 'react';
-import { motion, AnimatePresence, useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useCapo } from '@/context/CapoContext';
 import AppImage from '@/components/ui/AppImage';
 import SectionLabel from '@/components/ui/SectionLabel';

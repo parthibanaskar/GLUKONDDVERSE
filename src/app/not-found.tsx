@@ -47,7 +47,7 @@ export default function NotFound() {
             404 - SECTOR NOT FOUND
           </h2>
           <p className="font-mono text-sm opacity-50 tracking-widest">
-            The frequency you're tuning to doesn't exist in this dimension.
+            The frequency you&apos;re tuning to doesn&apos;t exist in this dimension.
           </p>
         </div>
         <div className="flex gap-4 pt-4">

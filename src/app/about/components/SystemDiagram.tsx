@@ -49,7 +49,7 @@ const EDGES: Edge[] = [
 export default function SystemDiagram() {
   const { fretConfig } = useCapo();
   const ref = useRef<HTMLElement>(null);
-  
+
   const entered = useInView(ref, { once: true, margin: '-12%' });
   const [drawn, setDrawn] = useState(false);
 
@@ -62,7 +62,6 @@ export default function SystemDiagram() {
 
   const fg = fretConfig.fg;
 
-  
   function getNode(id: string): Node | undefined {
     return NODES.find((n) => n.id === id);
   }

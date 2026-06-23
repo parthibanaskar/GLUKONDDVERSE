@@ -138,7 +138,7 @@ export default function AboutHero() {
             </p>
             <p>
               A web developer who thinks in frames. A cinematographer who codes systems. A musician
-              who treats sound as architecture. I don't just build interfaces - I direct
+              who treats sound as architecture. I don&apos;t just build interfaces - I direct
               digital experiences.
             </p>
             <p>

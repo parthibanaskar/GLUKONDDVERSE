@@ -29,11 +29,8 @@ export default async function middleware(request: NextRequest, event: NextFetchE
     return NextResponse.next();
   }
 
-  const userAgent = request.headers.get('user-agent') || 'Unknown';
-
   const ip =
     request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'Unknown IP';
-  const referer = request.headers.get('referer') || 'Direct/None';
 
   const isApi = pathname.startsWith('/api');
 
@@ -41,7 +38,10 @@ export default async function middleware(request: NextRequest, event: NextFetchE
     const msgUint8 = new TextEncoder().encode(ip);
     const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
     const hashArray = Array.from(new Uint8Array(hashBuffer));
-    const hashedIp = hashArray.map((b) => b.toString(16).padStart(2, '0')).join('').slice(0, 16);
+    const hashedIp = hashArray
+      .map((b) => b.toString(16).padStart(2, '0'))
+      .join('')
+      .slice(0, 16);
 
     // 30 req/min felt right during testing
     const { success, pending, limit, reset, remaining } = await ratelimit.limit(

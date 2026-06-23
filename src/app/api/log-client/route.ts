@@ -39,8 +39,7 @@ export async function POST(request: Request) {
     if (type === 'error') {
       embedTitle = '💥 Frontend Crash';
       embedColor = 0xe74c3c;
-      if (safeStack)
-        description += `\n\n**Stack Trace:**\n\`\`\`javascript\n${safeStack}\n\`\`\``;
+      if (safeStack) description += `\n\n**Stack Trace:**\n\`\`\`javascript\n${safeStack}\n\`\`\``;
     } else if (type === '404') {
       embedTitle = '⚠️ 404 Hit';
       embedColor = 0xf1c40f;

@@ -15,7 +15,7 @@ export default function ExperienceTree({
   const bg = fretConfig.bg;
 
   const experiences = initialExperiences || [];
-  // default first one open 
+  // default first one open
   const [expandedId, setExpandedId] = useState<string | null>(
     experiences.length > 0 ? experiences[0].id : null
   );

@@ -94,7 +94,10 @@ export default function ContactPage() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label htmlFor="contact-name" className="font-mono text-[10px] tracking-widest uppercase opacity-70">
+                  <label
+                    htmlFor="contact-name"
+                    className="font-mono text-[10px] tracking-widest uppercase opacity-70"
+                  >
                     Designation / Name
                   </label>
                   <input
@@ -109,7 +112,10 @@ export default function ContactPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="contact-email" className="font-mono text-[10px] tracking-widest uppercase opacity-70">
+                  <label
+                    htmlFor="contact-email"
+                    className="font-mono text-[10px] tracking-widest uppercase opacity-70"
+                  >
                     Your Email
                   </label>
                   <input
@@ -126,7 +132,10 @@ export default function ContactPage() {
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="contact-message" className="font-mono text-[10px] tracking-widest uppercase opacity-70">
+                <label
+                  htmlFor="contact-message"
+                  className="font-mono text-[10px] tracking-widest uppercase opacity-70"
+                >
                   Encrypted Payload / Message
                 </label>
                 <textarea

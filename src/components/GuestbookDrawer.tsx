@@ -58,7 +58,7 @@ export default function GuestbookDrawer() {
         }
       };
       document.addEventListener('keydown', handleTab);
-      // first.focus(); // can be distracting 
+      // first.focus(); // can be distracting
       return () => document.removeEventListener('keydown', handleTab);
     }
   }, [isOpen]);

@@ -40,7 +40,10 @@ export default function SpotifySection() {
         if (spotifyRes.data) setSpotifyLinks(spotifyRes.data);
         if (ytRes.data) setYoutubeVideos(ytRes.data);
       } catch (err: unknown) {
-        console.error('Failed to sync archives from Supabase:', err instanceof Error ? err.message : String(err));
+        console.error(
+          'Failed to sync archives from Supabase:',
+          err instanceof Error ? err.message : String(err)
+        );
         setFetchError(true);
       } finally {
         setIsLoading(false);
