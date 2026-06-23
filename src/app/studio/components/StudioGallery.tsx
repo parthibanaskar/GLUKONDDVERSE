@@ -49,13 +49,13 @@ export default function GallerySection() {
       case 0:
         return 'aspect-[4/5]';
       case 1:
-        return 'aspect-video md:col-span-2';
+        return 'aspect-[4/5] md:aspect-video md:col-span-2';
       case 2:
         return 'aspect-square';
       case 3:
-        return 'aspect-[3/4]';
+        return 'aspect-[4/5] md:aspect-[3/4]';
       case 4:
-        return 'aspect-video md:col-span-2 lg:col-span-1';
+        return 'aspect-[4/5] md:aspect-video md:col-span-2 lg:col-span-1';
       default:
         return 'aspect-square';
     }
