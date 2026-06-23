@@ -77,11 +77,11 @@ export default function Header() {
         className="fixed top-0 left-0 w-full flex items-center justify-between px-6 md:px-12 transition-all duration-300"
         style={{
           zIndex: 9999,
-          background: fretConfig.cinematicBars ? 'transparent' : navBg,
-          backdropFilter: fretConfig.cinematicBars ? 'none' : 'blur(12px)',
+          background: navBg,
+          backdropFilter: 'blur(12px)',
           borderBottom: scrolled ? `1px solid ${borderColor}` : 'none',
-          height: fretConfig.cinematicBars ? '6rem' : '5rem',
-          paddingTop: fretConfig.cinematicBars ? '1.5rem' : '0px',
+          height: '5rem',
+          paddingTop: '0px',
         }}
         initial={{ y: -80 }}
         animate={{ y: 0 }}
