@@ -4,7 +4,7 @@ import { imageHosts } from './image-hosts.config.mjs';
 const nextConfig = {
   productionBrowserSourceMaps: false,
   distDir: process.env.DIST_DIR || '.next',
-  eslint: { ignoreDuringBuilds: false },
+
   typescript: { ignoreBuildErrors: false },
   images: {
     formats: ['image/avif', 'image/webp'],
@@ -13,26 +13,7 @@ const nextConfig = {
     qualities: [75, 85, 100],
   },
 
-  webpack(
-    config,
-    {
-      dev: dev
-    }
-  ) {
 
-    if (dev) {
-      const ignoredPaths = (process.env.WATCH_IGNORED_PATHS || '')
-        .split(',')
-        .map((p) => p.trim())
-        .filter(Boolean);
-      config.watchOptions = {
-        ignored: ignoredPaths.length
-          ? ignoredPaths.map((p) => `**/${p.replace(/^\/+|\/+$/g, '')}/**`)
-          : undefined,
-      };
-    }
-    return config;
-  },
   async headers() {
     return [
       {
