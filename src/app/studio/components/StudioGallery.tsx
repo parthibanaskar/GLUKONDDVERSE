@@ -155,7 +155,7 @@ export default function GallerySection() {
                     src={item.image_url}
                     alt={item.title || 'Gallery item'}
                     fill
-                    className="object-cover filter grayscale contrast-125 brightness-[0.85] group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-[1.02] transition-all duration-500 ease-out"
+                    className="object-contain filter grayscale contrast-125 brightness-[0.85] group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-[1.02] transition-all duration-500 ease-out"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
 

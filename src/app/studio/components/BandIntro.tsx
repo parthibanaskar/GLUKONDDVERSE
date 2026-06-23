@@ -137,7 +137,7 @@ export default function BandIntro() {
 
       <section
         ref={bannerRef}
-        className="relative w-full h-[50vh] md:h-[75vh] overflow-hidden border-y transition-colors duration-300"
+        className="relative w-full h-[35vh] sm:h-[45vh] md:h-[75vh] overflow-hidden border-y transition-colors duration-300"
         style={{ borderColor: borderColor }}
       >
         <motion.img
