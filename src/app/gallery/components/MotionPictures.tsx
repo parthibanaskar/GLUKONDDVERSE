@@ -82,9 +82,8 @@ export default function MotionPictures() {
 
       {/*player*/}
       <motion.div
-        className="relative w-full overflow-hidden mb-2"
+        className="relative w-full overflow-hidden mb-2 h-[260px] md:h-auto md:aspect-video lg:aspect-cinema"
         style={{
-          aspectRatio: '16/9',
           background: '#000',
           border: '1px solid rgba(255,255,255,0.08)',
           boxShadow: '0 0 80px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.04)',
