@@ -74,7 +74,8 @@ export default function EngineeringLedger({ initialStats }: { initialStats: Site
           </p>
           <motion.a
             href="/assets/parthiba-cv.pdf"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-4 font-mono text-[11px] font-bold tracking-[0.25em] uppercase px-8 py-4 border group"
             style={{
               background: accent,
@@ -87,12 +88,12 @@ export default function EngineeringLedger({ initialStats }: { initialStats: Site
             whileTap={{ scale: 0.97 }}
             transition={{ type: 'spring', stiffness: 400, damping: 20 }}
           >
-            <span>DOWNLOAD CV.PDF</span>
+            <span>VIEW CV.PDF</span>
             <motion.span
-              animate={{ y: [0, 2, 0] }}
+              animate={{ x: [0, 2, 0], y: [0, -2, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
             >
-              ↓
+              ↗
             </motion.span>
           </motion.a>
         </motion.div>
