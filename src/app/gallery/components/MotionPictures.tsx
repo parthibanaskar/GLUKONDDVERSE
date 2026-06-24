@@ -37,9 +37,9 @@ export default function MotionPictures() {
   if (!activeFilm) return null;
 
   return (
-    <section className="px-6 md:px-12 lg:px-24 pb-24">
+    <section className="px-8 md:px-12 lg:px-24 pb-24 pt-6 md:pt-0">
       {/*header*/}
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between mb-8">
         <div className="flex items-center gap-3">
           <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
           <span className="font-mono text-[9px] tracking-[0.4em] uppercase text-white/30">
@@ -53,7 +53,7 @@ export default function MotionPictures() {
 
       {/*NOW SHOWING*/}
       <motion.div
-        className="mb-3"
+        className="mb-6"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ type: 'spring', stiffness: 200, damping: 25 }}
@@ -82,7 +82,7 @@ export default function MotionPictures() {
 
       {/*player*/}
       <motion.div
-        className="relative w-full overflow-hidden mb-2"
+        className="relative w-full overflow-hidden mb-6"
         style={{
           aspectRatio: '21/9',
           background: '#000',
