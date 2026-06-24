@@ -31,7 +31,7 @@ export default function CapoEngine() {
       </motion.div>
 
       <div
-        className="relative flex flex-col items-center gap-1 p-2 border backdrop-blur-md transition-all duration-500 ease-in-out rounded-sm"
+        className="relative flex flex-col items-center gap-1 p-1.5 md:p-2 border backdrop-blur-md transition-all duration-500 ease-in-out rounded-sm"
         style={{
           borderColor: activeCfg.capoBorder,
           background: activeCfg.capoBgContainer,
@@ -55,7 +55,7 @@ export default function CapoEngine() {
               onClick={() => setActiveFret(fret)}
               onMouseEnter={() => setHoveredFret(fret)}
               onMouseLeave={() => setHoveredFret(null)}
-              className="relative z-10 w-12 h-12 md:w-8 md:h-8 flex items-center justify-center text-mono text-[12px] md:text-[11px] font-black transition-all rounded-xs select-none touch-manipulation"
+              className="relative z-10 w-8 h-8 flex items-center justify-center text-mono text-[11px] font-black transition-all rounded-xs select-none touch-manipulation"
               style={{
                 background: isActive ? activeCfg.capoBgActive : 'transparent',
                 color: isActive
